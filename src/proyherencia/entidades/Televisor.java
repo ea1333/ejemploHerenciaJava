@@ -54,16 +54,12 @@ public class Televisor extends Electrodomestico {
         this.setTamanio(sc.nextDouble());
         System.out.println("Tiene sintonizador TDA? S/N");
         String TDA = sc.next();
-        if ("s".equalsIgnoreCase(TDA)) {
-            this.setSintonizadorTDA(true);
-        } else {
-            this.setSintonizadorTDA(false);
-        }
+        this.setSintonizadorTDA("s".equalsIgnoreCase(TDA));//equalsIgnoreCase es una función Boolean
     }
     
     @Override
     public void precioFinal() {
-        super.precioFinal();//Llama al método de la clase padre Electrodomestico
+        super.precioFinal();
         Double p = 0.0;
         if (this.getTamanio() >= 40) {
             p += (this.getPrecio() * 0.3);
