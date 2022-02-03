@@ -21,8 +21,8 @@ public class NewMainEj3 {
      */
     public static void main(String[] args) {
         ArrayList<Electrodomestico> lista = new ArrayList();
-        lista.add(new Lavadora(30.00, 3500.00, "blanco", 'B', 50.00));
-        lista.add(new Lavadora(75.00, 4000.00, "blanco", 'A', 100.00));
+        lista.add(new Lavadora(30.0, 3500.0, "blanco", 'B', 50.0));
+        lista.add(new Lavadora(75.0, 4000.0, "blanco", 'A', 100.0));
         lista.add(new Televisor(32.0, true, 4000.00, "negro", 'C', 3.0));
         lista.add(new Televisor(40.0, true, 6000.00, "negro", 'A', 5.0));
         Double precioTotal = 0.0;

@@ -115,13 +115,13 @@ public abstract class Electrodomestico {
                 break;
         }
         if (this.getPeso() >= 1 && this.getPeso() < 19) {
-            p += 100.00;
+            p += 100;
         } else if (this.getPeso() >= 20 && this.getPeso() <= 49) {
-            p += 500.00;
+            p += 500;
         } else if (this.getPeso() >= 50 && this.getPeso() <= 79) {
-            p += 800.00;
+            p += 800;
         } else if (this.getPeso() >= 80) {
-            p += 1000.00;
+            p += 1000;
         }
         this.setPrecio(this.getPrecio() + p);
     }
