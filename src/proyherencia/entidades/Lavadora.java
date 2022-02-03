@@ -36,16 +36,17 @@ public class Lavadora extends Electrodomestico {
         return "Lavadora{" + super.toString() + ", carga=" + carga + '}';
     }
     
-    public void crearLavadora() {
+    @Override
+    public void crear() {
         Scanner sc = new Scanner(System.in);
-        super.crear();
+        super.crear();//Llama al método de la clase padre Electrodomestico
         System.out.println("Carga");
         this.setCarga(sc.nextDouble());
     }
     
     @Override
     public void precioFinal() {
-        super.precioFinal();//Llama al método de la clase padre Electrodomestico
+        super.precioFinal();
         if (this.getCarga() > 30) {
             this.setPrecio(this.getPrecio() + 500);
         }

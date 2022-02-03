@@ -23,11 +23,11 @@ public class NewMainEJ2 {
 //        e.crear();
 //        System.out.println(e.toString());
         Lavadora l = new Lavadora();
-        l.crearLavadora();
+        l.crear();
         l.precioFinal();
         System.out.println(l.toString());
         Televisor tv = new Televisor();
-        tv.crearTele();
+        tv.crear();
         tv.precioFinal();
         System.out.println(tv.toString());
     }

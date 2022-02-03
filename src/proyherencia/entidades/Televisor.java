@@ -46,9 +46,10 @@ public class Televisor extends Electrodomestico {
         return "Televisor{" + super.toString() + ", tamanio=" + tamanio + ", sintonizadorTDA=" + sintonizadorTDA + '}';
     }
     
-    public void crearTele() {
+    @Override
+    public void crear() {
         Scanner sc = new Scanner(System.in);
-        super.crear();
+        super.crear();//Llama al método de la clase padre Electrodomestico
         System.out.println("Tamaño");
         this.setTamanio(sc.nextDouble());
         System.out.println("Tiene sintonizador TDA? S/N");
@@ -62,7 +63,7 @@ public class Televisor extends Electrodomestico {
     
     @Override
     public void precioFinal() {
-        super.precioFinal();
+        super.precioFinal();//Llama al método de la clase padre Electrodomestico
         Double p = 0.0;
         if (this.getTamanio() >= 40) {
             p += (this.getPrecio() * 0.3);
